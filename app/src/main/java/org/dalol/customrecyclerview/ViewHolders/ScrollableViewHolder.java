@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -29,7 +30,9 @@ public class ScrollableViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setItems(List<CarouselItem> scrollables) {
-        mItemsAdapter.setItems(scrollables);
+        if (mItemsAdapter.getItemCount() == 0) {
+            mItemsAdapter.setItems(scrollables);
+        }
     }
 
     class ItemsAdapter extends RecyclerView.Adapter<ScrollableItemViewHolder> {
@@ -68,19 +71,27 @@ public class ScrollableViewHolder extends RecyclerView.ViewHolder {
         }
     }
 
-    class ScrollableItemViewHolder extends RecyclerView.ViewHolder {
+    class ScrollableItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private final ImageView mImg;
         private final TextView mTxt;
+        private String mTitle;
 
         ScrollableItemViewHolder(View itemView) {
             super(itemView);
             mImg = itemView.findViewById(R.id.imageView2);
             mTxt = itemView.findViewById(R.id.scrollableItem);
+            itemView.setOnClickListener(this);
         }
 
         void setTitle(String title) {
+            mTitle = title;
             mTxt.setText(title);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(v.getContext(), mTitle, Toast.LENGTH_SHORT).show();
         }
     }
 }
