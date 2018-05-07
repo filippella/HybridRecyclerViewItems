@@ -1,17 +1,17 @@
-package org.dalol.customrecyclerview.Adapter;
+package org.dalol.hybridrecyclerlistitems.Adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import org.dalol.customrecyclerview.Model.CarouselItem;
+import org.dalol.hybridrecyclerlistitems.Model.CarouselItem;
 import org.dalol.customrecyclerview.R;
-import org.dalol.customrecyclerview.Model.SimpleListItem;
-import org.dalol.customrecyclerview.ViewHolders.AdViewHolder;
-import org.dalol.customrecyclerview.ViewHolders.ItemViewHolder;
-import org.dalol.customrecyclerview.ViewHolders.LoadingProgressViewHolder;
-import org.dalol.customrecyclerview.ViewHolders.ScrollableViewHolder;
+import org.dalol.hybridrecyclerlistitems.Model.SimpleListItem;
+import org.dalol.hybridrecyclerlistitems.ViewHolders.AdViewHolder;
+import org.dalol.hybridrecyclerlistitems.ViewHolders.ItemViewHolder;
+import org.dalol.hybridrecyclerlistitems.ViewHolders.LoadingProgressViewHolder;
+import org.dalol.hybridrecyclerlistitems.ViewHolders.ScrollableViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;

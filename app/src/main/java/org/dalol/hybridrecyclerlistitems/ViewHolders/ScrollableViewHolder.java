@@ -1,4 +1,4 @@
-package org.dalol.customrecyclerview.ViewHolders;
+package org.dalol.hybridrecyclerlistitems.ViewHolders;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import org.dalol.customrecyclerview.Model.CarouselItem;
+import org.dalol.hybridrecyclerlistitems.Model.CarouselItem;
 import org.dalol.customrecyclerview.R;
 
 import java.util.ArrayList;

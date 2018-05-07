@@ -1,4 +1,4 @@
-package org.dalol.customrecyclerview.Model;
+package org.dalol.hybridrecyclerlistitems.Model;
 
 public class SimpleListItem<M> {
 

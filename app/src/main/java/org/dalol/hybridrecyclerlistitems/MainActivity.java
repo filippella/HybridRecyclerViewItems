@@ -1,12 +1,13 @@
-package org.dalol.customrecyclerview;
+package org.dalol.hybridrecyclerlistitems;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
-import org.dalol.customrecyclerview.Adapter.HybridListItemsAdapter;
-import org.dalol.customrecyclerview.Model.CarouselItem;
-import org.dalol.customrecyclerview.Model.SimpleListItem;
+import org.dalol.hybridrecyclerlistitems.Adapter.HybridListItemsAdapter;
+import org.dalol.hybridrecyclerlistitems.Model.CarouselItem;
+import org.dalol.hybridrecyclerlistitems.Model.SimpleListItem;
+import org.dalol.customrecyclerview.R;
 
 import java.util.ArrayList;
 import java.util.List;

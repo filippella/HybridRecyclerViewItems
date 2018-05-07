@@ -1,4 +1,4 @@
-package org.dalol.customrecyclerview.ViewHolders;
+package org.dalol.hybridrecyclerlistitems.ViewHolders;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

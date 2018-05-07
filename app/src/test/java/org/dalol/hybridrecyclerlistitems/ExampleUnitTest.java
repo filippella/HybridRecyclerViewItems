@@ -1,4 +1,4 @@
-package org.dalol.customrecyclerview;
+package org.dalol.hybridrecyclerlistitems;
 
 import org.junit.Test;
 
